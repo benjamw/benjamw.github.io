@@ -37,5 +37,22 @@
     {% if user.hireable %}
       <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
     {% endif %}
+      <div class="{{ metadata_styles }}">
+        {% octicon browser height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:website %}
+        <a href="http://iohelix.net" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+          http://iohelix.net
+        </a>
+      </div>
   </div>
 {% endif %}
+
+<ul>
+  <li><a href="/tracers/">Tracers</a></li>
+  <li><a href="/sa_tools/">SA Tools</a></li>
+  <li><a href="/daz_tools/">DAZ Tools</a></li>
+  <li><a href="/spies/">Spies</a></li>
+  <li><a href="/dice_games/farkle.html">Farkle</a></li>
+  <li><a href="/dice_games/qwixx.html">Qwixx</a></li>
+  <li><a href="/wumpus/">Hunt the Wumpus</a></li>
+  <li><a href="/mastermind/mastermind.html">Mastermind</a></li>
+</ul>
